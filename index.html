@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+</head>
+
+<body>
+    <div id="page-content">
+        <div id="video-container">
+    <div id="adblock" class="px"></div>
+    <div class="addBlockIsTurnOn"></div>
+            <video id="video-element" controls>
+              <source src="https://storage.googleapis.com/interactive-media-ads/media/big_buck_bunny.mp4">
+              <source src="https://storage.googleapis.com/interactive-media-ads/media/testad/testad-640-122.webm">
+            </video>
+            <div id="ad-container"></div>
+          </div>
+      <button id="play-button">Play</button>
+      <button id="skip-button">Skip</button>
+    </div>
+   
+    <div class="start-message" id="startMessage">
+        <div data-start-message-text>Do you want start the Game?</div>
+        <input type="button" id="yesBtn"  value="Yes">
+        <input type="button" id="noBtn"  value="No">
+    </div>
+    <div class="game-message" id="gameMessage">
+        <div class="textUser"></div>
+    </div>
+    <div class="board" id="board"></div>
+    
+    </div>
+    
+    <div class="endgame">
+		<div class="text"></div>
+            <div data-start-message-text>Do you want start the new game?</div>
+            <input type="button" id="restart"  value="Yes">
+            <input type="button" id="noBtn2"  value="No">
+       
+	</div>
+    <script src="/static/scripts/main.js"></script>
+    <script  src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+</body>
+
+</html>
